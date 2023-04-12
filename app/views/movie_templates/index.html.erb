@@ -17,7 +17,21 @@
       </td>
       <td><%= a_thing.title %></td>
       <td><%= a_thing.year %></td>
-      <td></td>
+      <td> 
+        <%= x = a_thing.director_id %>
+
+        <hr>
+        
+        <%= all_matches = Director.where({ :id => x }) %>
+
+        <hr>
+
+        <%= dir_row = all_matches.at(0) %>
+
+        <hr>
+
+        <%= dir_row.name %>
+      </td>
       <td>
         <a href="/movies/<%= a_thing.id %>">
           Show details

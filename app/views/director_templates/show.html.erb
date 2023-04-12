@@ -70,6 +70,7 @@
       <%= a_film.id%>
     </td>
     <td>
+    http://robohash.org/http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX214_.jpg?set=set4
       <img src="http://robohash.org/<%= a_film.image%>?set=set4">
     </td>
     <td>
@@ -83,7 +84,7 @@
       <%= d.name %>
     </td>
     <td>
-      <a href="">
+      <a href="/movies/<%= a_film.id %>">
         Show Details
       </a>
     </td>
